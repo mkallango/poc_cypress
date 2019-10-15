@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  cypress:
+    image: "cypress/included:3.4.1"
+    environment:
+      - CYPRESS_baseUrl=https://www.google.com
+    working_dir: /wackawacka
+    volumes:
+      - ./:/wackawacka
